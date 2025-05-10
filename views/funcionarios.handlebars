@@ -1,0 +1,22 @@
+<h1>Funcionários Cadastrados</h1>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Cargo</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each funcionarios}}
+      <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.cargo}}</td>
+        <td>{{this.email}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<a href="/">Voltar</a>
